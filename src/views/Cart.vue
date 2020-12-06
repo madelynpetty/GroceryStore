@@ -22,9 +22,6 @@ export default {
     }
   },
   methods: {
-    addProductToCart(product) {
-      this.$store.dispatch('cart/addProductToCart', product);
-    }
   }
 }
 </script>

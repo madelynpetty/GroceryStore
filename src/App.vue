@@ -1,3 +1,5 @@
+import data from './main.js'
+
 <template>
 <div id="app">
   <div id="menu">
@@ -16,7 +18,13 @@
       <router-link to="/cart">
         <div class="menu-item">
           <img src="/images/love.png">
-          <p>0 items</p>
+          <!-- <div id='numInCart'> -->
+            <!-- {{ numberOfItems() }} -->
+          <!-- </div> -->
+          <!-- <MainCart :cart="cartSize" /> -->
+          <!-- <p> items</p> -->
+          <!-- <p>{{cartSize()}}</p> -->
+          <p>Your Cart</p>
         </div>
       </router-link>
     </div>
@@ -24,6 +32,33 @@
   <router-view />
 </div>
 </template>
+
+<script>
+// import data from './main.js';
+// import MainCart from './main.js';
+export default {
+  // props: ['cart1'],
+  // components: {
+  //   MainCart
+  // },
+  computed: {
+    cartSize() {
+      return this.$root.$data.cart.length;
+    }
+  },
+  // template: '<App :cart="cart" />'
+  // computed: {
+    // numberOfItems() {
+      // return data.cart.length;
+    // }
+  // },
+  // methods: {
+  //   // GetCartNum() {
+  //   //   return numInCart
+  //   // }
+  // },
+}
+</script>
 
 <style>
 * {

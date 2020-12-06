@@ -5,19 +5,23 @@ import mock from './mock-data.js'
 
 let data = {
   products: mock,
-  cart: [
-    // {
-    // id: 2,
-    // name: "Fake data",
-    // price: "$2.41",
-    // country: "Brazil",
-    // image: "sweet-potato.jpg"
-    // }
-  ]
+  cart: []
 }
 
+export { data };
+// let app = Firebase.initializeApp(config);
+
 new Vue({
+  name: 'MainCart',
+  props: {
+    cart: Array
+  },
   router,
   data,
-  render: h => h(App)
+  render: h => h(App),
+
+  // numInCart: this.cart
+  
+  // components: {App},
+  // template: '<App :cart="cart" />'
 }).$mount('#app')
