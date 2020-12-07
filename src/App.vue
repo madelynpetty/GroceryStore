@@ -33,7 +33,7 @@ import data from './main.js'
 </div>
 </template>
 
-<!-- <script> -->
+<!-- <script>
 // import data from './main.js';
 // import MainCart from './main.js';
 // export default {
@@ -58,7 +58,7 @@ import data from './main.js'
   //   // }
   // },
 // }
-<-- </script> -->
+</script> -->
 
 <style>
 * {
