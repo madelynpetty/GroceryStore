@@ -33,19 +33,19 @@ import data from './main.js'
 </div>
 </template>
 
-<script>
+<!-- <script> -->
 // import data from './main.js';
 // import MainCart from './main.js';
-export default {
+// export default {
   // props: ['cart1'],
   // components: {
   //   MainCart
   // },
-  computed: {
-    cartSize() {
-      return this.$root.$data.cart.length;
-    }
-  },
+  // computed: {
+    // cartSize() {
+      // return this.$root.$data.cart.length;
+    // }
+  // },
   // template: '<App :cart="cart" />'
   // computed: {
     // numberOfItems() {
@@ -57,8 +57,8 @@ export default {
   //   //   return numInCart
   //   // }
   // },
-}
-</script>
+// }
+<-- </script> -->
 
 <style>
 * {
